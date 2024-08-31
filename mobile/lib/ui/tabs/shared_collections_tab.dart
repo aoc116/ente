@@ -21,6 +21,7 @@ import 'package:photos/ui/tabs/section_title.dart';
 import "package:photos/ui/tabs/shared/all_quick_links_page.dart";
 import "package:photos/ui/tabs/shared/empty_state.dart";
 import "package:photos/ui/tabs/shared/quick_link_album_item.dart";
+import "package:photos/ui/viewer/gallery/collect_photos_card_widget.dart";
 import "package:photos/ui/viewer/gallery/collection_page.dart";
 import "package:photos/utils/debouncer.dart";
 import "package:photos/utils/navigation_util.dart";
@@ -318,6 +319,7 @@ class _SharedCollectionsTabState extends State<SharedCollectionsTab>
                     ],
                   )
                 : const SizedBox.shrink(),
+            const CollectPhotosCardWidget(),
             const SizedBox(height: 32),
           ],
         ),
